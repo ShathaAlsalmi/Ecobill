@@ -1,0 +1,8 @@
+{
+  "name": "Copy of Remix Remix  EcoBill new theme",
+  "description": "Smart electricity consumption management platform for household energy insights and decision simulation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

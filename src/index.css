@@ -1,0 +1,75 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+[dir="rtl"] {
+  font-family: 'Tajawal', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+@keyframes floatBlob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(40px, -50px) scale(1.12);
+  }
+  66% {
+    transform: translate(-30px, 30px) scale(0.88);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob-1 {
+  animation: floatBlob 12s infinite ease-in-out;
+}
+
+.animate-blob-2 {
+  animation: floatBlob 16s infinite ease-in-out 3s;
+}
+
+.animate-blob-3 {
+  animation: floatBlob 14s infinite ease-in-out 6s;
+}
+
+/* Print & PDF Export Global Styles */
+/* Hide native browser number input spinners globally */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media print {
+  header, nav, aside, .print\:hidden, button, input, textarea {
+    display: none !important;
+  }
+  
+  body, #root, main {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+  }
+  
+  #printable-advisor-plan,
+  #printable-financial-agent {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 12px !important;
+    margin: 0 !important;
+    width: 100% !important;
+    background: #ffffff !important;
+    color: #0f172a !important;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 15mm;
+  }
+}
+
