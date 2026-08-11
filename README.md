@@ -1,37 +1,37 @@
 # EcoBill — Smart Home Utility Optimization Platform
 
-> EcoBill هي منصة ذكية موحدة لإدارة واستدامة خدمات الكهرباء والمياه في المنازل السكنية بالمملكة العربية السعودية، تجمع بين الرؤية الحاسوبية، التوأم الرقمي ثلاثي الأبعاد (3D Digital Twin)، ووكلاء الذكاء الاصطناعي المالي والترشيدي.
+> EcoBill is a smart, unified platform designed to manage and optimize residential electricity and water consumption in Saudi Arabia. It combines Computer Vision, an interactive 3D Digital Twin, and AI Agents for financial ROI and sustainability planning.
 
 ---
 
-## المشكلة والحل (Problem & Solution)
+## Problem & Solution
 
-* **المشكلة:** يعاني قطاع الإسكان من ارتفاع هدر استهلاك الكهرباء والمياه، وتداخل شرائح التعرفة الحكومية التراكمية، مع صعوبة فهم الفواتير وغياب أدوات تفاعلية تقدم تحليلات مالية ومحاكاة مخصصة لمنزل الساكن.
-* **الحل (EcoBill):** تطبيق ويب تفاعلي يستند لتقنيات الذكاء الاصطناعي لقراءة الفواتير تلقائياً عبر Vision OCR، ومقارنة استهلاك المنزل ببيانات الهيئة العامة للإحصاء (GASTAT 2024)، ومحاكاة سيناريوهات التوفير عبر توأم رقمي 3D، وتقديم خطط ترشيد وحساب فترة استرداد الاستثمار (ROI).
-
----
-
-## الميزات الرئيسية (Key Features)
-
-1. **قراءة الفواتير بالذكاء الاصطناعي (Instant OCR Bill Reader):**
-   - استخراج وتصنيف بيانات فواتير شركة الكهرباء السعودية (SEC) وشركة المياه الوطنية (NWC) تلقائياً باستخدام Gemini Vision API.
-
-2. **المقارنة المرجعية الوطنية (Saudi Regional Benchmarking):**
-   - ربط استهلاك المنزل المباشر مع بيانات الإحصاء المفتوحة (GASTAT 2024) لمناطق المملكة الـ 13، وتوليد مؤشر كفاءة خاص (Eco-Score).
-
-3. **التوأم الرقمي التفاعلي (3D Digital Twin - What-If Simulator):**
-   - بيئة محاكاة تفاعلية ثلاثية الأبعاد (Three.js / React Three Fiber) لاختبار أثر التكييف، الألواح الشمسية، مرشدات المياه، ومحاكاة تسربات الأنابيب الخفية.
-
-4. **مركز وكلاء الذكاء الاصطناعي (AI Agents Hub):**
-   - **Financial ROI Agent:** تفكيك الشرائح وحساب فترة استرداد رأس المال بالشهور للأجهزة المرشدة ومعادلة التوفير الموحدة.
-   - **Smart Advisor Agent:** خطة ترشيد شهرية تفاعلية قابلة للإتمام وربط التوصيات الصادرة من الدردشة المباشرة بخطة الترشيد تلقائياً.
-
-5. **دعم التكيّف المزدوج (Bilingual & Dark/Light Themes):**
-   - دعم كامل وسلس للغتين العربية والإنجليزية مع التبديل المباشر بين المظهر المظلم والفاتح.
+* **The Problem:** The residential sector faces rising electricity and water waste, complex progressive utility tariffs, and a lack of interactive tools that provide custom financial analytics and home simulations for residents.
+* **The Solution (EcoBill):** An interactive web application powered by AI to automatically process bills via Vision OCR, benchmark home consumption against official Saudi open data (GASTAT 2024), simulate saving scenarios through a 3D Digital Twin, and deliver actionable saving plans with accurate ROI payback calculations.
 
 ---
 
-## التقنيات المستخدمة (Tech Stack)
+## Key Features
+
+1. **Instant AI OCR Bill Reader:**
+   - Automatically extracts and classifies data from Saudi Electricity Company (SEC) and National Water Company (NWC) bills using Gemini Vision API.
+
+2. **Saudi Regional Benchmarking:**
+   - Maps household consumption directly against official open data (GASTAT 2024) across all 13 Saudi regions, generating a custom efficiency index (Eco-Score).
+
+3. **Interactive 3D Digital Twin (What-If Simulator):**
+   - A real-time 3D simulation environment built with Three.js / React Three Fiber to test the impact of HVAC settings, solar PV panels, water flow restrictors, and hidden pipe leaks.
+
+4. **AI Agents Hub:**
+   - **Financial ROI Agent:** Deconstructs tariff tiers, calculates payback periods in months for energy-efficient upgrades, and computes combined annual savings.
+   - **Smart Advisor Agent:** Interactive monthly efficiency action plans with completion tracking and automatic integration of recommendations from the live AI Chat.
+
+5. **Bilingual & Adaptive Design:**
+   - Full support for English and Arabic 🇸🇦 with instant Light/Dark mode toggling.
+
+---
+
+## Tech Stack
 
 * **Frontend:** React, TypeScript, Tailwind CSS, Lucide Icons
 * **3D & Graphics:** Three.js, React Three Fiber
@@ -41,14 +41,14 @@
 
 ---
 
-## خارطة الطريق المستقبلية (Future Roadmap)
+## Future Roadmap
 
-- الربط المباشر مع واجهات العدادات الذكية (IoT Smart Meters APIs) لشركتي SEC و NWC.
-- إطلاق تطبيق الهواتف الذكية (iOS & Android) مدعوماً بتنبيهات إشعار استباقية قبل تجاوز الشريحة الأولى.
-- التوسع في نماذج التنبؤ التكيفية استناداً إلى بيانات الطقس والمواسم الإقليمية.
+- Direct integration with SEC and NWC IoT Smart Meter APIs for live real-time data sync.
+- Launching mobile applications (iOS & Android) featuring proactive push notifications before exceeding Tier 1 tariff limits.
+- Expanding predictive load models based on live regional weather and seasonal data.
 
 ---
 
-## الفريق (Team)
+## Team
 
-* **فريق EcoBill** — تم تطوير هذا المشروع ضمن مشاركة تحدي أبطال الذكاء الاصطناعي 2026 (AI Champions Challenge) - أكاديمية طويق.
+* **EcoBill Team** — Developed for the **AI Champions Challenge 2026** - Tuwaiq Academy.
